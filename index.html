@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>phone website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+     <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="img/logo.png" width="150px;" height="50px;" alt="Logo">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Virsion</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+        </nav>
+        <div class="information">
+            <div class="overlay"></div>
+            <div  class="oppo-feature">
+                <div>
+                    <h1>Oppo</h1>
+                    <h4>A wonderful experience</h4>
+                </div>
+                <img src="img/oppo.png" class="mobile" alt="">
+
+            </div>
+            <div id="circle">
+                <div class="feature one">
+                    <img src="img/camera.png" alt="">
+                    <div>
+                        <h2>Camrea</h2>
+                        <p>12 mega px , left angle lense</p>
+                    </div>
+                    
+                </div>
+                <div class="feature two">
+                    <img src="img/processor.png" alt="">
+                    <div>
+                        <h2>Processor</h2>
+                    <p>Snapdragon processor</p>
+                    </div>
+                    
+                    
+                </div>
+                <div class="feature three">
+                    <img src="img/display.png" alt="">
+                    <div>
+                        <h2>display</h2>
+                    <p>6.43" Super emolate Display</p>
+                    </div>
+                    
+                </div>
+                <div class="feature four">
+                    <img src="img/battery.png " style="transform:rotate(-90deg)" alt="">
+                    <div>
+                        <h2>battery</h2>
+                    <p>5000mAh Long Lastic Battery</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="controls" >
+            <img id="upArrow" 
+            style="padding:5px;
+            border-radius:50px;
+            background-color:white;" 
+            src="img/arrow.png" alt="">
+
+            <h2>feature</h2>
+
+            <img id="downArrow"
+            style="padding:5px;
+            border-radius:50px;
+            background-color:white" 
+             src="img/arrow.png" alt="">
+        </div>       
+
+     </div>
+     <div class="para"style="margin-top:50px;" >
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid quis, odio quasi unde enim voluptatibus ea sed quas earum, temporibus necessitatibus velit totam quod beatae illo! Ut doloribus amet qui laborum quisquam quibusdam deleniti mollitia provident minus, quidem perferendis rerum itaque temporibus nesciunt voluptate libero, voluptatibus veniam? Exercitationem impedit perferendis, perspiciatis quibusdam veniam at unde sint esse explicabo cumque molestiae accusamus voluptas atque deserunt, blanditiis eligendi dicta quisquam illum quaerat? Dolore totam suscipit, aut repellat accusantium modi atque qui ab et saepe consequatur repellendus consectetur neque adipisci consequuntur. Vel, totam fugiat amet optio quidem maiores soluta recusandae qui ad? Reprehenderit doloribus possimus, rerum eum libero ut distinctio ex provident, cumque ab sed, odit nesciunt. Placeat iure, deserunt laborum magni id voluptas atque quia recusandae numquam doloremque aliquam earum unde aspernatur. Velit facilis quam, nesciunt assumenda veritatis, asperiores voluptatibus atque quasi maiores corrupti adipisci deleniti aliquid vitae, veniam libero. Laborum voluptate sequi, dicta quaerat nobis consequatur quia corrupti veritatis iure rem! Dolores perferendis sapiente possimus, labore voluptatem aliquam quod id rerum debitis aperiam placeat tempora iure, ducimus rem eius nemo, suscipit architecto eaque impedit quisquam reprehenderit doloribus! Molestiae rerum ipsam pariatur at, enim harum repellat officiis repudiandae! Eum ipsum doloremque id?</p>
+    </div>
+
+     <script>
+        var circle = document.getElementById("circle");
+        var upArrow = document.getElementById("upArrow");
+        var downArrow = document.getElementById("downArrow");
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+
+        upArrow.onclick = function(){
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+        downArrow.onclick = function(){
+            rotateSum = rotateValue + "rotate(90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+     </script>
+    
+</body>
+</html>
